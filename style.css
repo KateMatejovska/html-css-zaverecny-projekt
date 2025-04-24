@@ -14,3 +14,259 @@ html { box-sizing: border-box; }
 
   --radius: 12px;
 }
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+a.nav__link {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  color: var(--color-secondary-dark);
+  font-size: 1.25rem;
+  font-weight: 500;  
+}
+
+a.nav__link:hover {
+  background-color: var(--color-secondary-bright);
+  border-radius: 100vw;
+}
+
+.container {
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto; 
+}
+
+.logo {
+  height: 35px;  
+}
+
+.hero {
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;  
+}
+
+.hero .container p {
+  font-size: 1.25rem;
+  margin-top: 30px;
+  margin: 30px;
+}  
+
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 100vw;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a.button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 1100px;
+  }
+
+  .logo-wrap {
+    align-self: flex-start;    
+  }
+
+  .nav-wrap {
+    align-self: flex-end;    
+  }
+
+  a.nav__link {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }  
+
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .hero .container p {
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin: 30px;
+  }  
+  
+ 
+  a.button {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.125rem;
+  }
+
+  .dva-sloupce {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container {    
+    width: 1100px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  a.nav__link {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 0;
+  }
+
+  .hero .container p {
+    font-size: 1.25rem;
+    margin-top: 30px;
+    margin: 30px;
+  }  
+
+  a.button {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.125rem;
+  }
+
+  .dva-sloupce {
+    display: flex;
+    gap: 40px;
+  }
+}
