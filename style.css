@@ -138,6 +138,95 @@ a.button:hover {
   background-color: var(--color-primary-dark);
 }
 
+.jid-listek h2 {
+ margin-bottom: 30px;
+ margin-top: 0;
+}
+
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--color-secondary-bright);
+  border-radius: var(--radius);
+}
+
+.card img {
+  height: 40px;
+  width: 40px;
+}
+
+.card h3 {
+  color: var(--color-secondary);
+}
+
+.card a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card p,.card a,.card h3,.card img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.rozvoz {
+  background-color: var(--color-section-bg);
+}
+
+.dva-sloupce {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sloupec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.sloupec p,.sloupec ul,.sloupec h2,.sloupec a {
+  margin: 0;
+}
+
+.picture img {
+  width: calc((100% + 60px));
+  border-radius: 20px;
+}
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.paticka {
+  background-color: var(--color-footer-bg);
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -160,7 +249,7 @@ a.button:hover {
   }
 
   .container {
-    width: 1100px;
+    max-width: 1100px;
   }
 
   .logo-wrap {
@@ -200,10 +289,27 @@ a.button:hover {
     font-size: 1.125rem;
   }
 
+  .card-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;    
+  }
+
+  .card {
+    width: calc((100% - 30px) / 2);
+    height: calc((100% - 30px) / 2);
+  }
+
+  .sloupec {
+    gap: 40px;
+  }
+
   .dva-sloupce {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    flex-direction: row;
+    gap: 60px;
   }
 }
 
@@ -228,8 +334,8 @@ a.button:hover {
     justify-content: space-between;
   }
 
-  .container {    
-    width: 1100px;
+  .container {
+    max-width: 1100px;
   }
 
   .logo {
@@ -265,8 +371,16 @@ a.button:hover {
     font-size: 1.125rem;
   }
 
+  .card-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
   .dva-sloupce {
     display: flex;
+    flex-direction: row;
     gap: 40px;
+    align-items: center;
   }
 }

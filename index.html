@@ -42,39 +42,48 @@
 
 
   <!-- sekce JÍDELNÍ LÍSTEK -->
-<section>
-  <div class="container">
-    <h2>Jídelní lístek</h2>
-
-    <img src="images/snidane.svg" alt="" width="40" height="40">
-    <h3>Snídaně</h3>
-    <p>Čerstvé pečivo, vejce, jogurty, saláty a domácí pomazánky.</p>
-    <a href="#">Ukázat menu</a>
-
-    <img src="images/hlavni-jidla.svg" alt="" width="40" height="40">
-    <h3>Hlavní jídla</h3>
-    <p>Vše z čerstvých surovin. Maso, ryby i vege&shy;tari&shy;ánské speciality.</p>
-    <a href="#">Ukázat menu</a>
-
-    <img src="images/grill.svg" alt="" width="40" height="40">
-    <h3>Zahradní grill</h3>
-    <p>Letní atmosféra, vůně grilu. Marinované maso, zelenina přímo z ohně.</p>
-    <a href="#">Ukázat menu</a>
-
-    <img src="images/napoje.svg" alt="" width="40" height="40">
-    <h3>Nápoje</h3>
-    <p>Osvěžující limonády, výběrová vína, lokální piva i&nbsp;skvělá káva.</p>
-    <a href="#">Ukázat menu</a>
-  </div>
+<section class="jid-listek">
+    <div class="container">
+      <h2>Jídelní lístek</h2>
+    <div class="card-wrap">
+      <div class="card">
+        <img src="images/snidane.svg" alt="" width="40" height="40">
+        <h3>Snídaně</h3>
+        <p>Čerstvé pečivo, vejce, jogurty, saláty a domácí pomazánky.</p>
+        <a href="#">Ukázat menu</a>
+      </div>
+      <div class="card">
+        <img src="images/hlavni-jidla.svg" alt="" width="40" height="40">
+        <h3>Hlavní jídla</h3>
+        <p>Vše z čerstvých surovin. Maso, ryby i vege&shy;tari&shy;ánské speciality.</p>
+        <a href="#">Ukázat menu</a>
+      </div>
+      <div class="card">
+        <img src="images/grill.svg" alt="" width="40" height="40">
+        <h3>Zahradní grill</h3>
+        <p>Letní atmosféra, vůně grilu. Marinované maso, zelenina přímo z ohně.</p>
+        <a href="#">Ukázat menu</a>
+      </div>
+      <div class="card">
+        <img src="images/napoje.svg" alt="" width="40" height="40">
+        <h3>Nápoje</h3>
+        <p>Osvěžující limonády, výběrová vína, lokální piva i&nbsp;skvělá káva.</p>
+        <a href="#">Ukázat menu</a>
+      </div>
+    </div>
+    </div>
 </section>
 
 
   <!-- sekce ROZVOZ -->
-<section>
+<section class="rozvoz">
   <div class="container">
     <div class="dva-sloupce">
       <div class="sloupec">
-        <img src="images/rozvoz-na-sirku.jpg" alt="Rozvoz jídla domů">
+        <picture class="picture">
+          <source media="(min-width: 768px)" srcset="images/rozvoz-na-vysku.jpg">  
+          <img src="images/rozvoz-na-sirku.jpg" alt="Rozvoz jídla domů">
+        </picture>
       </div>
       <div class="sloupec">
         <h2>Nejrychlejší rozvoz jídla ve městě</h2>
@@ -104,7 +113,7 @@
 
 
   <!-- PATIČKA -->
-<footer>
+<footer class="paticka">
   <div class="container">
     <img src="images/logo-footer.svg" alt="Restaurace Bříško">
 
